@@ -5,9 +5,21 @@ Hope other Carrene members enjoy it as I do.
 
 
 ## Easy Integration
+### Installation
 ```
 sudo pip3.6 install git+https://github.com/shivanouri/carrene-daily-email-subject#egg=carrene-daily-email-subject
-
-
+```
+### Usage
+Just type the command and your Team Name at the end
+```
 subjectsgeneration subject --team TeamName
+```
+Or easier:
+```
+subjectsgeneration subject -t TeamName
+
+```
+Output:
+```
+Daily Report Thursday 1397/12/02 (TeamName)
 ```
