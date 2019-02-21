@@ -10,7 +10,7 @@ with open(join(dirname(__file__), 'subjectsgeneration', '__init__.py')) as v_fil
 
 dependencies = [
     'khayyam',
-    'easycli'
+    'easycli', 'pyperclip'
 ]
 
 
