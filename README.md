@@ -5,3 +5,9 @@ Hope other Carrene members enjoy it as I do.
 
 
 ## Easy Integration
+```
+sudo pip3.6 install git+https://github.com/shivanouri/carrene-daily-email-subject#egg=carrene-daily-email-subject
+
+
+subjectsgeneration subject --team TeamName
+```
