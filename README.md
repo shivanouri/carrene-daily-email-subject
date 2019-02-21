@@ -19,7 +19,7 @@ Or easier:
 subjectsgeneration subject -t TeamName
 
 ```
-Output:
+Output (**the output gets copied to your clipboard, so you won't have to copy it yourself**):
 ```
 Daily Report Thursday 1397/12/02 (TeamName)
 ```
