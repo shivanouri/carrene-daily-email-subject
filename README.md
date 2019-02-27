@@ -30,3 +30,14 @@ Output:
 ```
 Daily Report Wednesday 1397/12/08
 ```
+
+### Updating
+
+First unistall subject-generator:
+```
+sudo pip3.6 uninstall subject-generator
+```
+Then reinstall it again:
+```
+sudo pip3.6 install git+https://github.com/shivanouri/carrene-daily-email-subject#egg=carrene-daily-email-subject
+```
