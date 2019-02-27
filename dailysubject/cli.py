@@ -1,10 +1,10 @@
 from easycli import Argument, Root, SubCommand
 
-from generate.subjects.get_subject import get_daily_subject
+from dailysubject.subjects.get_subject import get_daily_subject
 
 
 class SubjectCommand(SubCommand):
-    __command__ = 'subject'
+    __command__ = 'generate'
     __arguments__ = [
         Argument(
             '-V', '--version',
