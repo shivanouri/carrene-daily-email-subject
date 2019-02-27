@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 
 # reading package version (without loading it)
-with open(join(dirname(__file__), 'subjectsgeneration', '__init__.py')) as v_file:
+with open(join(dirname(__file__), 'generate', '__init__.py')) as v_file:
     package_version = re.compile(r".*__version__ = '(.*?)'", re.S)\
         .match(v_file.read()).group(1)
 
@@ -23,7 +23,7 @@ setup(
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'subjectsgeneration = subjectsgeneration.cli:Main'
+            'generate = generate.cli:Main'
         ]
     },
     packages=find_packages(),

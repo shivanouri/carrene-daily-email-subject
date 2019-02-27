@@ -1,23 +1,26 @@
 from easycli import Argument, Root, SubCommand
 
-from subjectsgeneration.subjects.get_subject import get_daily_subject
+from generate.subjects.get_subject import get_daily_subject
 
 
 class SubjectCommand(SubCommand):
     __command__ = 'subject'
     __arguments__ = [
         Argument(
+            '-V', '--version',
+            action='store_true',
+            help='Shows version'
+        ),
+        Argument(
             '-t', '--team',
-            required=True,
             default='',
             help='Your team name to appear in generated subject.'
         ),
     ]
 
     def __call__(self, args):
-        if args.team:
-            team_name = args.team
-            print(get_daily_subject(team_name))
+        team_name = args.team
+        print(get_daily_subject(team_name))
 
 
 class Main(Root):

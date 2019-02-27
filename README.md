@@ -12,14 +12,23 @@ sudo pip3.6 install git+https://github.com/shivanouri/carrene-daily-email-subjec
 ### Usage
 Just type the command and your Team Name at the end
 ```
-subjectsgeneration subject --team TeamName
+generate subject --team TeamName
 ```
 Or easier:
 ```
-subjectsgeneration subject -t TeamName
+generate subject -t TeamName
+
+```
+Output (**the output gets copied to your clipboard, so you won't have to copy it yourself**):
+```
+Daily Report Thursday 1397/12/02 (TeamName)
+```
+**Team name is optional, so you can just have:**
+```
+generate subject
 
 ```
 Output:
 ```
-Daily Report Thursday 1397/12/02 (TeamName)
+Daily Report Wednesday 1397/12/08
 ```
